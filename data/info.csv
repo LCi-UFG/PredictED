@@ -1,0 +1,48 @@
+Assay,Threshold,Recall,Specificity,Target,Biological Process,Rule,Organism,Tissue,Cell Line Name
+NVS_NR_cAR,0.0800,0.6667,0.7287,AR,receptor binding,MIE,chimpanzee,NA,Sf9/Sf21
+NVS_NR_rAR,0.0500,0.8667,0.8038,AR,receptor binding,MIE,rat,prostate,Testosterone pre-treated rat prostate
+NVS_NR_hAR,0.0800,0.6111,0.8468,AR,receptor binding,MIE,human,NA,LnCAP
+OT_AR_ARSRC1_0480,0.1900,0.6667,0.8389,AR,coactivator recruitment,KE1,human,kidney,HEK293T
+OT_AR_ARSRC1_0960,0.1800,0.7586,0.7361,AR,coactivator recruitment,KE1,human,kidney,HEK293T
+TOX21_ARE_BLA_agonist_viability,0.0600,0.7297,0.8302,ARE,cytotoxicity filter,KE2,human,liver,HepG2
+TOX21_ARE_BLA_agonist_ratio,0.2300,0.6450,0.6475,Nrf2/ARE,chromatin binding,KE2,human,liver,HepG2
+ATG_AR_TRANS_dn,0.0000,1,0.0000,AR,transcription factor repression,KE3,human,liver,HepG2
+ATG_AR_TRANS_up,0.0100,0.6667,0.8777,AR,transcription factor activation,KE3,human,liver,HepG2
+OT_AR_ARELUC_AG_1440,0.0700,0.5882,0.5128,AR,gene expression (agonist),KE4,chinese hamster,ovary,CHO-K1
+TOX21_AR_BLA_Agonist_ratio,0.0600,0.7288,0.8054,AR,gene expression (agonist),KE4,human,kidney,HEK293T
+TOX21_AR_LUC_MDAKB2_Agonist,0.0600,0.6591,0.9458,AR,gene expression (agonist),KE4,human,breast,MDA-kb2
+TOX21_AR_BLA_Antagonist_ratio,0.2000,0.7531,0.7784,AR,gene expression (antagonist),KE4,human,kidney,HEK293T
+TOX21_AR_BLA_Antagonist_viability,0.0900,0.7917,0.7639,AR,cytotoxicity filter,KE4,human,kidney,HEK293T
+TOX21_AR_LUC_MDAKB2_Antagonist,0.1500,0.8056,0.7759,AR,gene expression (antagonist),KE4,human,breast,MDA-kb2
+TOX21_AR_LUC_MDAKB2_Antagonist_viability,0.0400,0.7647,0.8084,AR,cytotoxicity filter,KE4,human,breast,MDA-kb2
+ACEA_AR_agonist_80hr,0.0800,0.4783,0.6824,AR,cell proliferation (agonist),KE5,human,prostate,22Rv1
+ACEA_AR_agonist_AUC_viability,0.2700,0.7800,0.7025,AR,cytotoxicity filter,KE5,human,prostate,22Rv1
+ACEA_AR_antagonist_80hr,0.2600,0.8548,0.6514,AR,cell proliferation (antagonist),KE5,human,prostate,22Rv1
+ACEA_AR_antagonist_AUC_viability,0.2800,0.7833,0.6937,AR,cytotoxicity filter,KE5,human,prostate,22Rv1
+NVS_NR_bER,0.0500,0.7143,0.8478,ERα,receptor binding,MIE,bovine,uterus,NA
+NVS_NR_hER,0.1200,0.5789,0.9212,ERα,receptor binding,MIE,human,NA,NA
+NVS_NR_mERa,0.1300,0.6667,0.9399,ERα,receptor binding,MIE,mouse,NA,NA
+OT_ER_ERaERa_0480,0.0500,0.7692,0.8438,ERα,dimerization,KE1,human,kidney,HEK293T
+OT_ER_ERaERa_1440,0.0800,0.6667,0.8447,ERα,dimerization,KE1,human,kidney,HEK293T
+OT_ER_ERaERb_0480,0.2600,0.6818,0.9272,ERα/ERβ,dimerization,KE1,human,kidney,HEK293T
+OT_ER_ERaERb_1440,0.1900,0.6923,0.8231,ERα/ERβ,dimerization,KE1,human,kidney,HEK293T
+OT_ER_ERbERb_0480,0.0600,0.8947,0.7013,ERβ,dimerization,KE1,human,kidney,HEK293T
+OT_ER_ERbERb_1440,0.1000,0.7273,0.7947,ERβ,dimerization,KE1,human,kidney,HEK293T
+OT_ERa_EREGFP_0120,0.0500,0.8235,0.7372,ERα,chromatin binding,KE2,human,cervix,HeLa
+OT_ERa_EREGFP_0480,0.0400,0.8182,0.6358,ERα,chromatin binding,KE2,human,cervix,HeLa
+ATG_ERa_TRANS_up,0.2700,0.5875,0.8471,ERα,transcription factor activation,KE3,human,liver,HepG2
+ATG_ERE_CIS_up,0.2800,0.5747,0.8000,ERα,transcription factor activation,KE3,human,liver,HepG2
+ATG_ERa_TRANS_dn,0.0400,0.3333,10.000,ERα,transcription factor repression,KE3,human,liver,HepG2
+ATG_ERE_CIS_dn,0.0400,0.6000,0.6417,ERα,transcription factor repression,KE3,human,liver,HepG2
+TOX21_ERa_BLA_Agonist_ratio,0.0700,0.6957,0.8926,ERα,gene expression (agonist),KE4,human,kidney,HEK293T
+TOX21_ERa_LUC_BG1_Agonist,0.1500,0.6134,0.7566,ERα,gene expression (agonist),KE4,human,ovary,BG1
+TOX21_ERa_BLA_Antagonist_ratio,0.0900,0.8396,0.6860,ERα,gene expression (antagonist),KE4,human,kidney,HEK293T
+TOX21_ERa_BLA_Antagonist_viability,0.0100,0.8571,0.7312,ERα,cytotoxicity filter,KE4,human,kidney,HEK293T
+TOX21_ERa_LUC_BG1_Antagonist,0.1000,0.7475,0.7932,ERα,gene expression (antagonist),KE4,human,ovary,BG1
+TOX21_ERa_LUC_BG1_Antagonist_viability,0.0300,0.8113,0.7663,ERα,cytotoxicity filter,KE4,human,ovary,BG1
+TOX21_ERb_BLA_Agonist_ratio,0.0300,0.7857,0.9209,ERβ,gene expression (agonist),KE4,human,kidney,HEK293T
+TOX21_ERb_BLA_Antagonist_ratio,0.1600,0.7800,0.7303,ERβ,gene expression (antagonist),KE4,human,kidney,HEK293T
+TOX21_ERb_BLA_Antagonist_viability,0.1400,0.7364,0.7592,ERβ,cytotoxicity filter,KE4,human,kidney,HEK293T
+ACEA_ER_80hr,0.1100,0.5405,0.7220,ERα,cell proliferation (agonist),KE5,human,breast,T47D
+ACEA_ER_AUC_viability,0.2900,0.6092,0.6335,ERα,cytotoxicity filter,KE5,human,breast,T47D
+,,0.7245,0.8043,,,,,,

@@ -1,0 +1,27 @@
+ID,SMILES,Standard value
+37,C[C@H]1CCCC(=O)CCC/C=C/c2cc(O)cc(O)c2C(=O)O1,1
+12,CC(C)Oc1ccc2c(=O)c(-c3ccccc3)coc2c1,1
+40,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,1
+Pestice7,COCC(=O)N(c1c(C)cccc1C)C(C)C(=O)OC,0
+68,O=c1c(-c2ccc(O)cc2)coc2cc(O)ccc12,0
+Tox21_80,C=CCN(CC=C)C(=O)C(Cl)Cl,0
+Tox21_10,CCOCCOCCOCCO,0
+Tox21_94,CCOc1cc(C=O)ccc1O,0
+81,c1ccc2c(c1)ccc1cc3c(ccc4ccccc43)cc12,0
+Drug18,NC(=O)N1c2ccccc2C=Cc2ccccc21,0
+Tox21_51,CC(O)CN(CCN(CC(C)O)CC(C)O)CC(C)O,0
+7,CC/C(=C(\c1ccccc1)c1ccc(OCCN(C)C)cc1)c1ccc(O)cc1,1
+Drug10,CO[C@H]1C[C@H](O[C@H]2[C@H](C)O[C@@H](O[C@@H]3/C(C)=C/C[C@@H]4C[C@@H](C[C@]5(CC[C@H](C)[C@@H](C(C)C)O5)O4)OC(=O)[C@@H]4C=C(C)[C@@H](O)[C@H]5OC/C(=C\C=C\[C@@H]3C)[C@]54O)C[C@@H]2OC)O[C@@H](C)[C@@H]1O,0
+88,CC(C)C(C(=O)OC(C#N)c1cccc(Oc2ccccc2)c1)c1ccc(Cl)cc1,0
+Tox21_95,O=C(O)c1ccccc1C(=O)OCc1ccccc1,0
+64,C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@@H]4[C@H]3CC[C@@]21CC,1
+Tox21_34,CC(C)CCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCCC(C)C,0
+84,O=[N+]([O-])c1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl,0
+Tox21_37,CCCO,0
+Tox21_24,CCCCc1ccc(Cl)cc1,0
+Tox21_50,NC(=O)Nc1[nH]c(=O)[nH]c1O,0
+Tox21_52,C1CNCCN1,0
+Tox21_82,O=S(=O)(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,0
+Tox21_7,Nc1cccc(N)c1,0
+Tox21_103,NC1CCCCC1,0
+51,Oc1cc(Cl)ccc1Oc1ccc(Cl)cc1Cl,1

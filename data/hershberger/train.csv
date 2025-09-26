@@ -1,0 +1,217 @@
+CAS,SMILES,Standard value
+Decoy 82,COC(=O)c1ccccc1N,0
+121-75-5,CCOC(=O)CC(SP(=S)(OC)OC)C(=O)OCC,0
+122-14-5,COP(=S)(OC)Oc1ccc([N+](=O)[O-])c(C)c1,1
+25154-52-3,CCCCCCCCCc1ccccc1[O-],1
+32809-16-8,CC12CC1(C)C(=O)N(c1cc(Cl)cc(Cl)c1)C2=O,1
+Decoy 95,NC1CCCCC1,0
+1689-82-3,O=C1C=CC(=NNc2ccccc2)C=C1,0
+Decoy 39,O=C(O)CCC(=O)O,0
+521-18-6,C[C@]12CCC(=O)C[C@@H]1CC[C@@H]1[C@@H]2CC[C@]2(C)[C@@H](O)CC[C@@H]12,1
+24096-53-5,O=C1CCC(=O)N1c1cc(Cl)cc(Cl)c1,1
+Decoy 15,CCC(=O)OC1CC2CCC1(C)C2(C)C,0
+13311-84-7,CC(C)C(=O)Nc1ccc([N+](=O)[O-])c(C(F)(F)F)c1,1
+Decoy 80,CCC(=O)c1ccc(Cl)cc1,0
+Decoy 7,CCCCOC(=O)CCCCCCCCC(=O)OCCCC,0
+1861-40-1,CCCCN(CC)c1c([N+](=O)[O-])cc(C(F)(F)F)cc1[N+](=O)[O-],1
+Drug5,CCOC(=O)C1=CC(OC(CC)CC)C(NC(C)=O)C(N)C1,0
+211867-47-9,COc1ccc(C(=CC(=O)N2CCOCC2)c2ccc(F)cc2)cc1OC,1
+88671-89-0,CCCCC(C#N)(Cn1cncn1)c1ccc(Cl)cc1,0
+27314-13-2,CNc1cnn(-c2cccc(C(F)(F)F)c2)c(=O)c1Cl,1
+Decoy 5,CCCOC(=O)c1ccc(C(=O)OCCC)nc1,0
+56-53-1,CC/C(=C(/CC)c1ccc(O)cc1)c1ccc(O)cc1,0
+1131-60-8,Oc1ccc(C2CCCCC2)cc1,0
+Decoy 91,COC(=O)C(Cc1ccccc1)NC(=O)C(N)CC(=O)O,0
+57-91-0,C[C@]12CC[C@@H]3c4ccc(O)cc4CC[C@H]3[C@@H]1CC[C@H]2O,0
+Decoy 21,C=C1CCC2CC1C2(C)C,0
+57837-19-1,COCC(=O)N(c1c(C)cccc1C)C(C)C(=O)OC,0
+Pestice11,C#CCOS(=O)OC1CCCCC1Oc1ccc(C(C)(C)C)cc1,0
+52-01-7,CC(=O)S[C@@H]1CC2=CC(=O)CC[C@]2(C)[C@H]2CC[C@@]3(C)[C@@H](CC[C@@]34CCC(=O)O4)[C@H]12,1
+66230-04-4,CC(C)[C@@H](C(=O)O[C@@H](C#N)c1cccc(Oc2ccccc2)c1)c1ccc(Cl)cc1,0
+2312-35-8,C#CCOS(=O)OC1CCCCC1Oc1ccc(C(C)(C)C)cc1,1
+Pestice9,Oc1ccccc1-c1ccccc1,0
+Decoy 66,Cc1ccc([N+](=O)[O-])cc1[N+](=O)[O-],0
+Decoy 100,C1=COCCC1,0
+133-06-2,O=C1C2CC=CCC2C(=O)N1SC(Cl)(Cl)Cl,0
+315-37-7,CCCCCCC(=O)O[C@H]1CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3CC[C@]12C,1
+Decoy 90,C=C(C)C(=O)OCCC(C)OC(=O)C(=C)C,0
+82-68-8,O=[N+]([O-])c1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl,0
+1071-83-6,O=C(O)CNCP(=O)(O)O,0
+Drug1,CC(=O)Nc1ccc(O)cc1,0
+Pestice1,CNC(=O)Oc1cccc2ccccc12,0
+68359-37-5,CC1(C)C(C=C(Cl)Cl)C1C(=O)OC(C#N)c1ccc(F)c(Oc2ccccc2)c1,1
+360-70-3,CCCCCCCCCC(=O)O[C@H]1CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@@H]4[C@H]3CC[C@]12C,1
+2581-34-2,Cc1cc(O)ccc1[N+](=O)[O-],1
+84-75-3,CCCCCCOC(=O)c1ccccc1C(=O)OCCCCCC,0
+Pestice4,CC(C)Oc1cccc(NC(=O)c2ccccc2C(F)(F)F)c1,0
+50-28-2,C[C@]12CC[C@@H]3c4ccc(O)cc4CC[C@H]3[C@@H]1CC[C@@H]2O,0
+Decoy 33,CCCN(CCC)N=O,0
+53-16-7,C[C@]12CC[C@@H]3c4ccc(O)cc4CC[C@H]3[C@@H]1CCC2=O,1
+60168-88-9,OC(c1ccc(Cl)cc1)(c1cncnc1)c1ccccc1Cl,1
+55-38-9,COP(=S)(OC)Oc1ccc(SC)c(C)c1,1
+74-31-7,c1ccc(Nc2ccc(Nc3ccccc3)cc2)cc1,0
+56786-63-1,C[C@@H]1CC[C@@]2(OC1)O[C@H]1C[C@H]3[C@@H]4CC(=O)[C@@]5(O)C[C@@H](O)CC[C@]5(C)[C@H]4CC[C@]3(C)[C@H]1[C@@H]2C,1
+84-74-2,CCCCOC(=O)c1ccccc1C(=O)OCCCC,1
+28553-12-0,CC(C)CCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCC(C)C,1
+Decoy 54,Cc1cccc(N)c1C,0
+330-55-2,CON(C)C(=O)Nc1ccc(Cl)c(Cl)c1,1
+1582-09-8,CCCN(CCC)c1c([N+](=O)[O-])cc(C(F)(F)F)cc1[N+](=O)[O-],1
+Decoy 8,c1ccc(OP(Oc2ccccc2)Oc2ccccc2)cc1,0
+Decoy 27,CC1=CCC2CC1C2(C)C,0
+Decoy 22,O=C(OCc1ccccc1)c1ccccc1,0
+Drug10,CO[C@H]1C[C@H](O[C@H]2[C@H](C)O[C@@H](O[C@@H]3/C(C)=C/C[C@@H]4C[C@@H](C[C@]5(CC[C@H](C)[C@@H](C(C)C)O5)O4)OC(=O)[C@@H]4C=C(C)[C@@H](O)[C@H]5OC/C(=C\C=C\[C@@H]3C)[C@]54O)C[C@@H]2OC)O[C@@H](C)[C@@H]1O,0
+Decoy 87,CCNc1nc(NC(C)C)nc(SC)n1,0
+Drug6,C[C@H]1c2cccc(O)c2C(=O)C2=C(O)[C@]3(O)C(=O)C(C(N)=O)=C(O)[C@@H](N(C)C)[C@@H]3[C@@H](O)[C@@H]21,0
+Decoy 41,CCC1OC(=O)C(C)C(OC2CC(C)(OC)C(O)C(C)O2)C(C)C(OC2OC(C)CC(N(C)C)C2O)C(C)(O)CC(C)C(=O)C(C)C(O)C1(C)O,0
+Decoy 17,O=C=Nc1ccc(Cc2ccc(N=C=O)cc2)cc1,0
+Decoy 16,O=C(OCCOCCOC(=O)c1ccccc1)c1ccccc1,0
+67747-09-5,CCCN(CCOc1c(Cl)cc(Cl)cc1Cl)C(=O)n1ccnc1,1
+Decoy 61,O=C1NC(=O)c2ccccc21,0
+36734-19-7,CC(C)NC(=O)N1CC(=O)N(c2cc(Cl)cc(Cl)c2)C1=O,1
+80-05-7,CC(C)(c1ccc(O)cc1)c1ccc(O)cc1,0
+Decoy 101,Oc1cccc2cc3cccc(O)c3c(O)c12,0
+131-55-5,O=C(c1ccc(O)cc1O)c1ccc(O)cc1O,0
+115-95-7,C=CC(C)(CCC=C(C)C)OC(C)=O,0
+Decoy 57,c1c[nH]cn1,0
+140-66-9,CC(C)(C)CC(C)(C)c1ccc(O)cc1,0
+Pestice12,CCCC1COC(Cn2cncn2)(c2ccc(Cl)cc2Cl)O1,0
+Decoy 6,O=C(O)CCCCCCCC(=O)O,0
+Decoy 79,CC(C)(C)C(=O)c1ccccc1,0
+1820573-27-0,CC1(C)C(C=C(Cl)Cl)[C@@H]1C(=O)O[C@@H](C#N)c1ccc(F)c(Oc2ccccc2)c1,1
+13194-48-4,CCCSP(=O)(OCC)SCCC,1
+732-11-6,COP(=S)(OC)SCN1C(=O)c2ccccc2C1=O,1
+85-60-9,CCCC(c1cc(C(C)(C)C)c(O)cc1C)c1cc(C(C)(C)C)c(O)cc1C,0
+23135-22-0,CNC(=O)O/N=C(\SC)C(=O)N(C)C,0
+Decoy 92,CCCCCCCCCCCCCC(=O)O,0
+7696-12-0,CC(C)=C[C@@H]1[C@@H](C(=O)OCN2C(=O)C3=C(CCCC3)C2=O)C1(C)C,0
+57-85-2,CCC(=O)O[C@H]1CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3CC[C@]12C,1
+17804-35-2,CCCCNC(=O)n1c(NC(=O)OC)nc2ccccc21,1
+Decoy 71,CC1CC(O)CC(C)(C)C1,0
+77-89-4,CCOC(=O)CC(CC(=O)OCC)(OC(C)=O)C(=O)OCC,1
+80-46-6,CCC(C)(C)c1ccc(O)cc1,0
+58-22-0,C[C@]12CC[C@H]3[C@@H](CCC4=CC(=O)CC[C@@]43C)[C@@H]1CC[C@@H]2O,1
+Decoy 63,O=C(Cc1ccccc1)c1ccccc1,0
+Decoy 3,O=C(Oc1ccccc1)c1ccccc1,0
+Decoy 70,CN(C)N=O,0
+113-48-4,CCCCC(CC)CN1C(=O)C2C3C=CC(C3)C2C1=O,0
+56296-78-7,CNCCC(Oc1ccc(C(F)(F)F)cc1)c1ccccc1,0
+Decoy 86,CC(=O)SC(C(=O)NC1Cc2ccccc2C2CCCC(C(=O)O)N2C1=O)C(C)C,0
+32534-81-9,Brc1ccc(Oc2cc(Br)c(Br)cc2Br)c(Br)c1,1
+Decoy 45,NC(=O)Nc1[nH]c(=O)[nH]c1O,0
+52645-53-1,CC1(C)[C@H](C(=O)OCc2cccc(Oc3ccccc3)c2)[C@@H]1C=C(Cl)Cl,1
+Decoy 69,O=S(=O)(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,0
+Decoy 10,CCCCC=CCCCCCCCCCC=O,0
+77-40-7,CCC(C)(c1ccc(O)cc1)c1ccc(O)cc1,0
+131-16-8,CCCOC(=O)c1ccccc1C(=O)OCCC,0
+Drug4,O=C(O)c1cn(C2CC2)c2cc(N3CCNCC3)c(F)cc2c1=O,0
+Decoy 31,CC(C)N(c1ccccc1)C(C)C,0
+Decoy 24,CS(=O)(=O)OCCCCOS(C)(=O)=O,0
+13356-08-6,CC(C)(C)c1ccccc1,1
+117-81-7,CCCCC(CC)COC(=O)c1ccccc1C(=O)OCC(CC)CCCC,1
+26002-80-2,CC(C)=CC1C(C(=O)OCc2cccc(Oc3ccccc3)c2)C1(C)C,0
+Decoy 4,OCc1ccccc1,0
+Decoy 52,CCOC(=O)CC(=O)OCC,0
+104-43-8,CCCCCCCCCCCCc1ccc(O)cc1,0
+Decoy 11,Nc1cc(Cl)cc(C(=O)O)c1Cl,0
+Pestice8,CCCCC(C#N)(Cn1cncn1)c1ccc(Cl)cc1,0
+Decoy 23,CC(O)CC(C)(C)O,0
+Decoy 62,O=c1ccc2ccccc2o1,0
+67-64-1,CC(C)=O,0
+131-18-0,CCCCCOC(=O)c1ccccc1C(=O)OCCCCC,1
+Decoy 26,O=C(O)CC(C(=O)O)S(=O)(=O)O,0
+Decoy 68,C=CCN(CC=C)C(=O)C(Cl)Cl,0
+Decoy 93,CCN(CC)N=O,0
+68-22-4,C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@@H]4[C@H]3CC[C@@]21C,1
+Decoy 43,CCCCCCCOC(=O)CCC,0
+611-99-4,O=C(c1ccc(O)cc1)c1ccc(O)cc1,0
+Decoy 37,CCCc1ccc(O)cc1,0
+1943-97-1,Oc1ccc(C2(c3ccc(O)cc3)CC3CC2C2CCCC32)cc1,0
+Decoy 77,Cc1ccc(C)c2ccccc12,0
+2921-88-2,CCOP(=S)(OCC)Oc1nc(Cl)c(Cl)cc1Cl,0
+122-34-9,CCNc1nc(Cl)nc(NCC)n1,0
+10540-29-1,CC/C(=C(\c1ccccc1)c1ccc(OCCN(C)C)cc1)c1ccccc1,0
+Decoy 56,CCCc1ccc(OC)cc1,0
+Decoy 29,CC(=O)CC(C)(C)O,0
+Decoy 12,c1ccc(-c2ccccc2)cc1,0
+2664-63-3,Oc1ccc(Sc2ccc(O)cc2)cc1,0
+90-43-7,Oc1ccccc1-c1ccccc1,0
+Drug18,NC(=O)N1c2ccccc2C=Cc2ccccc21,0
+Decoy 60,CCOC(=O)c1ccccc1N,0
+Decoy 75,CCCSP(=S)(OCC)Oc1ccc(SC)cc1,0
+Pestice3,N#Cc1c(Cl)cccc1Cl,0
+Decoy 89,CCCCOCCOCCO,0
+Decoy 9,CCOCCOCCOCCO,0
+620-92-8,Oc1ccc(Cc2ccc(O)cc2)cc1,0
+Drug20,CC[C@@H](C(N)=O)N1CCCC1=O,0
+474-86-2,C[C@]12CC[C@H]3C(=CCc4cc(O)ccc43)[C@@H]1CCC2=O,1
+1861-32-1,COC(=O)c1c(Cl)c(Cl)c(C(=O)OC)c(Cl)c1Cl,0
+Decoy 96,O=C(O)CCCCC1SCC2NC(=O)NC21,0
+Decoy 19,O=C(O)c1cccc(C(=O)O)c1,0
+Decoy 46,COP(=O)(OC)OC(C)=CC(=O)N(C)C,0
+133-07-3,O=C1c2ccccc2C(=O)N1SC(Cl)(Cl)Cl,0
+Decoy 28,Oc1cccc(O)c1,0
+599-64-4,CC(C)(c1ccccc1)c1ccc(O)cc1,0
+Drug9,CCOC(=O)C1=CC(OC(CC)CC)C(NC(C)=O)C(N)C1,0
+1194-65-6,N#Cc1c(Cl)cccc1Cl,1
+Decoy 103,Oc1ccc2c(c1)OCC(N1CCC(O)(c3ccc(F)cc3)CC1)C2O,0
+Decoy 102,Cc1ccc(O)cc1,0
+1478-61-1,Oc1ccc(C(c2ccc(O)cc2)(C(F)(F)F)C(F)(F)F)cc1,0
+Drug8,Nc1nc(=O)c2ncn(COCCO)c2[nH]1,0
+1563-66-2,CNC(=O)Oc1cccc2c1OC(C)(C)C2,0
+1470-79-7,O=C(c1ccc(O)cc1)c1ccc(O)cc1O,1
+Drug17,OCCOCCN1CCN(C2=Nc3ccccc3Sc3ccccc32)CC1,0
+427-51-0,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C=C(Cl)C4=CC(=O)[C@@H]5C[C@@H]5[C@]4(C)[C@H]3CC[C@@]21C,1
+26399-02-0,CCCCCCCC/C=C\CCCCCCCC(=O)OCC(CC)CCCC,1
+138261-41-3,O=[N+]([O-])NC1=NCCN1Cc1ccc(Cl)nc1,0
+1897-45-6,N#Cc1c(Cl)c(Cl)c(Cl)c(C#N)c1Cl,0
+58-18-4,C[C@]12CCC(=O)C=C1CC[C@@H]1[C@@H]2CC[C@@]2(C)[C@H]1CC[C@]2(C)O,0
+Drug16,O=C(CCCN1CCC(O)(c2ccc(Cl)cc2)CC1)c1ccc(F)cc1,0
+Decoy 18,CCCCC(CC)COC(C)=O,0
+Decoy 58,NNC(=O)c1ccncc1,0
+29799-07-3,Oc1ccc(C23CC4CC(CC(C4)C2)C3)cc1,0
+520-85-4,CC(=O)[C@@]1(O)CC[C@H]2[C@@H]3C[C@H](C)C4=CC(=O)CC[C@]4(C)[C@H]3CC[C@@]21C,1
+Decoy 51,Cc1cccc(C)c1O,0
+1912-24-9,CCNc1nc(Cl)nc(NC(C)C)n1,0
+Decoy 73,CCCOCCO,0
+Decoy 50,CC(C)CCCC(C)(C)O,0
+58877-88-6,Clc1ccc2c(Cl)c(Cl)c(Cl)c(Cl)c2c1Cl,1
+4376-20-9,CCCCC(CC)COC(=O)c1ccccc1C(=O)O,1
+84371-65-3,CC#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CCC4=C3[C@@H](c3ccc(N(C)C)cc3)C[C@@]21C,1
+61-82-5,Nc1ncn[nH]1,0
+Drug13,C[C@@H]1[C@H](O)[C@@H](C)/C=C/C=C/CC/C=C/C=C/C=C/C=C/[C@H](O[C@@H]2O[C@H](C)[C@@H](O)[C@H](N)[C@@H]2O)C[C@@H]2O[C@](O)(C[C@@H](O)[C@H](O)CC[C@@H](O)C[C@@H](O)C[C@@H](O)CC(=O)O[C@H]1C)C[C@H](O)[C@H]2C(=O)O,0
+Decoy 94,COc1ccc(C=O)cc1,0
+22248-79-9,COP(=O)(OC)O/C(=C/Cl)c1cc(Cl)c(Cl)cc1Cl,0
+Decoy 47,CC1CN(N=Cc2cccnc2)C(=O)N=N1,0
+Decoy 36,CCCCOCCOC(=O)COc1nc(Cl)c(Cl)cc1Cl,0
+Drug2,CC(C)Cc1ccc(C(C)C(=O)O)cc1,0
+Decoy 14,CCO[Si](CCCNC(N)=O)(OCC)OCC,0
+Drug7,CC[C@H]1OC(=O)[C@H](C)[C@@H](O[C@H]2C[C@@](C)(OC)[C@@H](O)[C@H](C)O2)[C@H](C)[C@@H](O[C@@H]2O[C@H](C)C[C@H](N(C)C)[C@H]2O)[C@](C)(O)C[C@@H](C)CN(C)[C@H](C)[C@@H](O)[C@]1(C)O,0
+72-54-8,Clc1ccc(C(c2ccc(Cl)cc2)C(Cl)Cl)cc1,1
+Decoy 38,CCCCOCCOCCOCCO,0
+Decoy 34,CCCO,0
+Decoy 44,COC(=O)c1ccc(I)cc1S(=O)(=O)NC(=O)Nc1nc(C)nc(OC)n1,0
+1137-42-4,O=C(c1ccccc1)c1ccc(O)cc1,0
+Pestice7,COCC(=O)N(c1c(C)cccc1C)C(C)C(=O)OC,0
+71751-41-2,CO[C@H]1C[C@H](O[C@H]2[C@H](C)O[C@@H](O[C@@H]3/C(C)=C/C[C@@H]4C[C@@H](C[C@]5(C=C[C@H](C)[C@@H](C(C)C)O5)O4)OC(=O)[C@@H]4C=C(C)[C@@H](O)[C@H]5OC/C(=C\C=C\[C@@H]3C)[C@]54O)C[C@@H]2OC)O[C@@H](C)[C@@H]1O,0
+Decoy 67,OC1CCCCC1,0
+106-46-7,Clc1ccc(Cl)cc1,1
+333-41-5,CCOP(=S)(OCC)Oc1cc(C)nc(C(C)C)n1,1
+Decoy 32,CC(Oc1ccc(Cl)cc1Cl)C(=O)O,0
+Drug19,Nc1nnc(-c2cccc(Cl)c2Cl)c(N)n1,0
+50-50-0,C[C@]12CC[C@@H]3c4ccc(OC(=O)c5ccccc5)cc4CC[C@H]3[C@@H]1CC[C@@H]2O,1
+Decoy 65,CC12CCC(C1)C(C)(C)C2O,0
+Drug11,CCCSc1ccc2nc(NC(=O)OC)[nH]c2c1,0
+72-55-9,ClC(Cl)=C(c1ccc(Cl)cc1)c1ccc(Cl)cc1,1
+Pestice5,O=C1c2ccccc2C(=O)N1SC(Cl)(Cl)Cl,0
+Drug15,Cc1nc2n(c(=O)c1CCN1CCC(c3noc4cc(F)ccc34)CC1)CCCC2,0
+71751-41-2,CCC(C)[C@H]1O[C@]2(C=C[C@@H]1C)C[C@@H]1C[C@@H](C/C=C(\C)[C@@H](O[C@H]3C[C@H](OC)[C@@H](O[C@H]4C[C@H](OC)[C@@H](O)[C@H](C)O4)[C@H](C)O3)[C@@H](C)/C=C/C=C3\CO[C@@H]4[C@H](O)C(C)=C[C@@H](C(=O)O1)[C@]34O)O2,0
+30560-19-1,COP(=O)(NC(C)=O)SC,1
+65-04-3,C[C@]12C=CC(=O)C[C@@H]1CC[C@@H]1[C@@H]2CC[C@@]2(C)[C@H]1CC[C@]2(C)O,1
+57-30-7,CCC1(c2ccccc2)C(=O)[N-]C(=O)NC1=O,0
+Pestice10,O=[N+]([O-])c1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl,0
+50471-44-8,C=CC1(C)OC(=O)N(c2cc(Cl)cc(Cl)c2)C1=O,1
+Decoy 97,CSC(C)(C)C=NO,0
+Pestice13,CC(C)(C)C(O)(CCc1ccc(Cl)cc1)Cn1cncn1,0
+82657-04-3,Cc1c(COC(=O)C2C(/C=C(\Cl)C(F)(F)F)C2(C)C)cccc1-c1ccccc1,1
+Decoy 74,CC(C)(CO)CO,0
+Decoy 42,CCCCC(CC)COCCO,0

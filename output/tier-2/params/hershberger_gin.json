@@ -1,0 +1,18 @@
+{
+    "num_agg_layers": 4,
+    "num_lin_layers": 4,
+    "agg_hidden_dim_1": 96,
+    "agg_hidden_dim_2": 396,
+    "agg_hidden_dim_3": 84,
+    "agg_hidden_dim_4": 24,
+    "lin_hidden_dim_1": 73,
+    "lin_hidden_dim_2": 423,
+    "lin_hidden_dim_3": 317,
+    "lin_hidden_dim_4": 343,
+    "activation": "selu",
+    "dropout_rate": 0.29880990468148205,
+    "eps": 0.902913640604956,
+    "co_heads": 6,
+    "optimizer": "RAdam",
+    "weight_decay": 1.5076532085531476e-05
+}
