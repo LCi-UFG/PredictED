@@ -29,14 +29,16 @@ def view_attention(
     device,
     output_dir,
     figure_size=(10,5),
-    top_k=3,
+    top_k=4,
     left_padding=0.05,
     right_padding=0.05,
     bottom_padding=0.05,
     top_padding=0.05,
     band_gap=0.25,
     bottom_ratio=0.4,
-    target_bond_frac=0.06):
+    target_bond_frac=0.06,
+    pred_node_range=None,
+    pathway=None):
 
     os.makedirs(output_dir, exist_ok=True)
     model.to(device).eval()
@@ -81,6 +83,58 @@ def view_attention(
         labels_mol  = {n: decode_symbol(
             mol_graph.x[n]) for n in graph_mol.nodes()
             }
+
+        if pathway is not None and pred_node_range is None:
+            if pathway.lower() == "hershberger":
+                pred_node_range = (0, 20)
+            elif pathway.lower() == "uterotrophic":
+                pred_node_range = (20, 46)
+            else:
+                raise ValueError(f"Unknown pathway: {pathway}")
+
+        A_m2p_edges = A_m2p
+        A_p2m_edges = A_p2m
+        mask_p_edges = mask_p
+        pos_pred_edges = pos_pred
+        imp_pred_edges = imp_pred
+
+        if pred_node_range is not None:
+            start, end = pred_node_range
+            cols = np.arange(start, end, dtype=int)
+            if cols.size == 0:
+                raise ValueError("pred_node_range selects no nodes.")
+
+            if torch.is_tensor(A_m2p):
+                cols_t = torch.tensor(
+                    cols, dtype=torch.long, device=A_m2p.device
+                    )
+                A_m2p_edges = A_m2p[:, cols_t]
+                A_p2m_edges = A_p2m[cols_t, :]
+            else:
+                A_m2p_edges = A_m2p[:, cols]
+                A_p2m_edges = A_p2m[cols, :]
+
+            if torch.is_tensor(mask_p):
+                mask_p_edges = torch.ones(
+                    len(cols),
+                    dtype=torch.bool,
+                    device=mask_p.device
+                    )
+            else:
+                mask_p_edges = np.ones(len(cols), dtype=bool)
+
+            if torch.is_tensor(imp_pred):
+                cols_imp = torch.tensor(
+                    cols, dtype=torch.long, device=imp_pred.device
+                    )
+                imp_pred_edges = imp_pred[cols_imp]
+            else:
+                imp_pred_edges = np.asarray(imp_pred)[cols]
+
+            pos_pred_edges = {
+                i: pos_pred[n] for i, n in enumerate(cols)
+                }
+
         fig, (ax1, ax2) = plt.subplots(
             1, 2, figsize=figure_size
             )
@@ -116,8 +170,8 @@ def view_attention(
             node_edge_color='black',
             )
         draw_topk_edges(
-            ax1, A_m2p, mask_m, mask_p,
-            pos_mol, pos_pred,
+            ax1, A_m2p_edges, mask_m, mask_p_edges,
+            pos_mol, pos_pred_edges,
             imp_lig, cmap, v_lig, top_k
             )
         draw_base_graph(
@@ -131,7 +185,6 @@ def view_attention(
             vmax=v_pred,
             edge_color='lightgrey', 
             node_edge_color='black',
-
             )
         draw_base_graph(
             ax2, 
@@ -143,9 +196,9 @@ def view_attention(
             node_edge_color='black',
             )
         draw_topk_edges(
-            ax2, A_p2m, mask_p, mask_m,
-            pos_pred, pos_mol,
-            imp_pred, cmap, v_pred, top_k
+            ax2, A_p2m_edges, mask_p_edges, mask_m,
+            pos_pred_edges, pos_mol,
+            imp_pred_edges, cmap, v_pred, top_k
             )
         plt.tight_layout(pad=0.3)
         fig.savefig(
@@ -153,7 +206,7 @@ def view_attention(
             format='svg', transparent=True, dpi=300,
             bbox_inches='tight', pad_inches=0.1
             )
-        plt.show(fig)
+        plt.close(fig)
 
 
 def view_counterfactuality(
@@ -291,4 +344,4 @@ def view_counterfactuality(
             bbox_inches='tight',
             pad_inches=0.1
             )
-        plt.show(fig)
+        plt.close(fig)
