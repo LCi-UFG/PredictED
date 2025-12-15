@@ -4,8 +4,7 @@ import torch.nn.functional as F
 from torch_geometric.utils import softmax
 from torch_geometric.nn import (
     MessagePassing, 
-    GATv2Conv, 
-    GINEConv,
+    GATv2Conv,
     GraphNorm
     )
 
@@ -173,3 +172,4 @@ def cross_attention_block(
 
 
     return mol_seq, pred_seq, attn_l2p, attn_p2l
+
