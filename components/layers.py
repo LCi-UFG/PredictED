@@ -137,106 +137,6 @@ class GATLayer(nn.Module):
         return out
 
 
-class GINLayer(nn.Module):
-    def __init__(
-        self,
-        input_dim,
-        output_dim,
-        edge_dim,
-        num_lin_layers=2):
-
-        super(GINLayer, self).__init__()
-        layers = [nn.Linear(input_dim, output_dim), nn.ReLU()]
-        for _ in range(num_lin_layers - 1):
-            layers += [nn.Linear(
-                output_dim, output_dim), nn.ReLU()]
-        self.conv = GINEConv(
-            nn.Sequential(*layers),
-            edge_dim=edge_dim
-            )
-        self.conv_norm = GraphNorm(output_dim)
-        self.feature_projection = nn.Linear(
-            output_dim, output_dim)
-        self.control_gate = nn.Sequential(
-            nn.Linear(2 * output_dim, output_dim),
-            nn.Sigmoid()
-            )
-        self.post_mlp = nn.Sequential(
-            nn.Linear(output_dim, output_dim),
-            nn.ReLU(),
-            nn.Linear(output_dim, output_dim)
-            )
-        self.post_norm = GraphNorm(output_dim)
-
-    def forward(
-        self, x, 
-        edge_index, 
-        edge_attr, 
-        batch):
-
-        x = self.conv(x, edge_index, edge_attr)
-        x = self.conv_norm(x, batch)
-
-        proj = self.feature_projection(x)
-        gate = self.control_gate(torch.cat([proj, x], dim=-1))
-        out = gate * proj + (1 - gate) * x
-
-        out = self.post_mlp(out)
-        out = self.post_norm(out, batch)
-
-        return out
-
-    
-class MPNNLayer(MessagePassing):
-    def __init__(
-        self,
-        input_dim,
-        output_dim,
-        edge_dim,
-        dropout_rate):
-
-        super(MPNNLayer, self).__init__(aggr='add')
- 
-        self.message_proj = nn.Sequential(
-            nn.Linear(input_dim + edge_dim, output_dim),
-            nn.LayerNorm(output_dim),
-            nn.ReLU(),
-            nn.Dropout(dropout_rate)
-            )
-        self.node_proj = (
-            nn.Linear(input_dim, output_dim)
-            if input_dim != output_dim
-            else nn.Identity()
-            )
-        self.update_net = nn.Sequential(
-            nn.Linear(2 * output_dim, output_dim),
-            nn.ReLU(),
-            nn.Dropout(dropout_rate),
-            nn.Linear(output_dim, output_dim)
-            )
-        self.norm = GraphNorm(output_dim)
-
-    def message(self, x_j, edge_attr):
-        m = torch.cat([x_j, edge_attr], dim=-1)
-        return self.message_proj(m)
-
-    def update(self, aggr_out, x, batch):
-        h = self.node_proj(x)
-        cat = torch.cat([aggr_out, h], dim=-1)
-        new_h = self.update_net(cat)
-        out = new_h + h
-        out = self.norm(out, batch)
-        return out
-
-    def forward(self, x, edge_index, edge_attr, batch):
-        return self.propagate(
-            edge_index=edge_index,
-            x=x,
-            edge_attr=edge_attr,
-            batch=batch
-            )
-
-
 def cross_attention_block(
     mol_seq, 
     pred_seq,
@@ -270,5 +170,6 @@ def cross_attention_block(
         )
     mol_seq = norm_mol(mol_seq + mol_ctx)
     mol_seq  = mol_seq + ff_mol(mol_seq)
+
 
     return mol_seq, pred_seq, attn_l2p, attn_p2l
