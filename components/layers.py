@@ -1,10 +1,9 @@
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 from torch_geometric.utils import softmax
 from torch_geometric.nn import (
     MessagePassing, 
-    GATv2Conv,
+    GATv2Conv, 
     GraphNorm
     )
 
@@ -35,7 +34,6 @@ class AttentiveLayer(MessagePassing):
             )
         self.gru = nn.GRUCell(output_dim, output_dim)
         self.dropout = nn.Dropout(dropout_rate)
-        self.last_attn_weights = None     
 
     def message(
         self, 
@@ -51,7 +49,6 @@ class AttentiveLayer(MessagePassing):
         attn_weights = softmax(
             attn_scores, index, ptr, size_i
             )
-        self.last_attn_weights = attn_weights.squeeze(-1)  
         message = self.msg_mlp(
             torch.cat([x_j, edge_attr], dim=-1)
             )
@@ -89,8 +86,6 @@ class GATLayer(nn.Module):
         concat=True):
 
         super(GATLayer, self).__init__()
-        self.concat = concat
-        self.heads = heads
         self.conv = GATv2Conv(
             in_channels=input_dim,
             out_channels=(
@@ -110,7 +105,6 @@ class GATLayer(nn.Module):
         self.norm = GraphNorm(output_dim)
         self.activation = nn.ELU()
         self.dropout = nn.Dropout(dropout)
-        self.last_attn_weights = None
 
     def forward(
         self, x,
@@ -119,14 +113,7 @@ class GATLayer(nn.Module):
         batch):
 
         residual = self.res_connection(x)
-        out, (ei, aw) = self.conv(
-            x, edge_index,
-            edge_attr=edge_attr,
-            return_attention_weights=True
-            )
-        weights = aw.mean(dim=-1)
-        mask = ei[0] != ei[1]
-        self.last_attn_weights = weights[mask]
+        out = self.conv(x, edge_index, edge_attr=edge_attr)
 
         out = out + residual
         out = self.norm(out, batch)
@@ -134,6 +121,56 @@ class GATLayer(nn.Module):
         out = self.dropout(out)
 
         return out
+
+
+class MPNNLayer(MessagePassing):
+    def __init__(
+        self,
+        input_dim,
+        output_dim,
+        edge_dim,
+        dropout_rate):
+
+        super(MPNNLayer, self).__init__(aggr='add')
+ 
+        self.message_proj = nn.Sequential(
+            nn.Linear(input_dim + edge_dim, output_dim),
+            nn.LayerNorm(output_dim),
+            nn.ReLU(),
+            nn.Dropout(dropout_rate)
+            )
+        self.node_proj = (
+            nn.Linear(input_dim, output_dim)
+            if input_dim != output_dim
+            else nn.Identity()
+            )
+        self.update_net = nn.Sequential(
+            nn.Linear(2 * output_dim, output_dim),
+            nn.ReLU(),
+            nn.Dropout(dropout_rate),
+            nn.Linear(output_dim, output_dim)
+            )
+        self.norm = GraphNorm(output_dim)
+
+    def message(self, x_j, edge_attr):
+        m = torch.cat([x_j, edge_attr], dim=-1)
+        return self.message_proj(m)
+
+    def update(self, aggr_out, x, batch):
+        h = self.node_proj(x)
+        cat = torch.cat([aggr_out, h], dim=-1)
+        new_h = self.update_net(cat)
+        out = new_h + h
+        out = self.norm(out, batch)
+        return out
+
+    def forward(self, x, edge_index, edge_attr, batch):
+        return self.propagate(
+            edge_index=edge_index,
+            x=x,
+            edge_attr=edge_attr,
+            batch=batch
+            )
 
 
 def cross_attention_block(
@@ -170,6 +207,4 @@ def cross_attention_block(
     mol_seq = norm_mol(mol_seq + mol_ctx)
     mol_seq  = mol_seq + ff_mol(mol_seq)
 
-
     return mol_seq, pred_seq, attn_l2p, attn_p2l
-
